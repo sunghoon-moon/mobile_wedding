@@ -1,0 +1,202 @@
+/* style.css */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+ul { list-style-type: none;}
+a { text-decoration: none;}
+body {
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #444;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.img-responsive { width: 100%;}
+
+#main {
+    /* position: relative; */
+    width: 100%;
+    /* height: 100%; */
+    /* 디바이스 높이 100% vh(viewport height) */
+    height: 100vh;
+    background: #ccc;
+    /* 이미지 사이즈 최소 750 x 1334px */
+    background-image: url('../images/title.jpg');
+    background-size: cover;
+    background-position: center;
+    /* text-align: center; */
+}
+#main > .title_text {
+    /* 배색: #b4dbdc */
+    position: relative;
+    width: 100%;
+}
+#main > .title_text > .date {
+    position: absolute;
+    right: 5%;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+.line {
+    position: absolute;
+    top: 128px;
+    right: 5%;
+    width: 50px;
+    height: 1px;
+    background: #444;
+}
+#main > .title_text > .name {
+    position: absolute;
+    right: 5%;
+    top: 140px;
+    text-align: right;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+#main > .title_text > p.address {
+    position: absolute;
+    top: 620px;
+    right: 5%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 인사말(초대...) */
+#invitation {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0 35px;
+}
+#invitation > h1 {
+    font-size: 16px;
+    color: #794645;
+    padding: 25px 0;
+    line-height: 30px;
+    border-top: 1px solid #794645;
+    border-bottom: 1px solid #794645;
+}
+#invitation > .text {
+    padding-top: 10px;
+    line-height: 28px;
+}
+
+/* wedding */
+#wedding > .date {
+    background: #e3d3d4;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#wedding > .date > .name {
+    margin-bottom: 40px;
+}
+#wedding > .date > .name > span {
+    font-size: 20px;
+    font-weight: 700;
+}
+#wedding > .date > .address {
+    font-weight: 500;
+}
+
+
+/* 갤러리 */
+#gallery {
+    padding-top: 50px;
+    /* background: #b4dbdc; */
+}
+#gallery .small_img li { padding: 0;}
+
+.large_img > .img-responsive {
+    padding: 10px;
+}
+
+#gallery > .large_img > img { padding-bottom: 0;}
+
+#gallery .phone {
+    /* border-top: 1px solid #794645;
+    border-bottom: 1px solid #794645; */
+    margin: 30px 0;
+    padding: 1em;
+}
+#gallery .phone .info span {
+    font-size: 16px;
+    font-weight: 700;
+}
+.info .fa-mobile {
+    color: #794645;
+}
+p, i { vertical-align: middle;}
+
+#gallery .active { 
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+
+/* 오시는 길 */
+#location {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #e3d3d4;
+}
+#location iframe {
+    padding: 10px;
+}
+#location p {
+    padding: 5px 20px;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#location .car { margin-bottom: 10px;}
+#location p > span {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#location .map {
+    width: 330px;
+    height: 30px;
+    background: #794645;
+    border-radius: 15px;
+    margin-left: 22.5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#location .map > a {
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 공유하기 */
+#location .share a {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #794645;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+#location .share > .kakao,
+#location .share > .facebook,
+#location .share > .instagram {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+    margin: 20px 5px;
+}
